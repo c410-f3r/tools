@@ -1,7 +1,7 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import type { Enum, U8aFixed, i128, u128, u16, u64 } from '@polkadot/types';
+import type { Enum, U8aFixed, i128, u128, u16, u64, u32 } from '@polkadot/types';
 import type { ITuple } from '@polkadot/types/types';
 import type { AccountId, Balance, MultiAddress } from '@polkadot/types/interfaces/runtime';
 import type { MarketId } from '@zeitgeistpm/types/interfaces/predictionMarkets';
@@ -71,5 +71,8 @@ export interface ScalarPosition extends Enum {
 
 /** @name SerdeWrapper */
 export interface SerdeWrapper extends Balance {}
+
+/** @name RoundIndex */
+export interface RoundIndex extends u32 {}
 
 export type PHANTOM_INDEX = 'index';

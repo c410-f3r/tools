@@ -58,7 +58,7 @@ import type { ClassDetails, ClassId, ClassMetadata, DepositBalance, DepositBalan
 import type { Multisig, Timepoint } from '@polkadot/types/interfaces/utility';
 import type { VestingInfo } from '@polkadot/types/interfaces/vesting';
 import type { AssetInstance, AssetInstanceV0, AssetInstanceV1, BodyId, BodyPart, DoubleEncodedCall, Fungibility, InboundStatus, InstructionV2, InteriorMultiLocation, Junction, JunctionV0, JunctionV1, JunctionV2, Junctions, JunctionsV1, JunctionsV2, MultiAsset, MultiAssetFilter, MultiAssetFilterV1, MultiAssetFilterV2, MultiAssetV0, MultiAssetV1, MultiAssetV2, MultiAssets, MultiAssetsV1, MultiAssetsV2, MultiLocation, MultiLocationV0, MultiLocationV1, MultiLocationV2, NetworkId, OriginKindV0, OriginKindV1, OriginKindV2, OutboundStatus, Outcome, QueryId, QueryStatus, QueueConfigData, Response, ResponseV0, ResponseV1, ResponseV2, ResponseV2Error, ResponseV2Result, VersionMigrationStage, VersionedMultiAsset, VersionedMultiAssets, VersionedMultiLocation, VersionedResponse, VersionedXcm, WeightLimitV2, WildFungibility, WildMultiAsset, WildMultiAssetV1, Xcm, XcmAssetId, XcmError, XcmErrorV0, XcmErrorV1, XcmErrorV2, XcmOrder, XcmOrderV0, XcmOrderV1, XcmOrigin, XcmOriginKind, XcmV0, XcmV1, XcmV2, XcmVersion, XcmpMessageFormat } from '@polkadot/types/interfaces/xcm';
-import type { Amount, AmountOf, Asset, AuthorId, CategoryIndex, CurrencyId, CurrencyIdOf, Lookup, MarketIdOf, MaxRuntimeUsize, MultiHash, ScalarPosition, SerdeWrapper } from '@zeitgeistpm/types/interfaces/index';
+import type { Amount, AmountOf, Asset, AuthorId, CategoryIndex, CurrencyId, CurrencyIdOf, Lookup, MarketIdOf, MaxRuntimeUsize, MultiHash, ScalarPosition, SerdeWrapper, RoundIndex } from '@zeitgeistpm/types/interfaces/index';
 import type { Order, OrderSide } from '@zeitgeistpm/types/interfaces/orderbook';
 import type { Market, MarketCreation, MarketDispute, MarketDisputeMechanism, MarketId, MarketPeriod, MarketStatus, MarketType, Report } from '@zeitgeistpm/types/interfaces/predictionMarkets';
 import type { CommonPoolEventParams, Pool, PoolAssetEvent, PoolAssetsEvent, PoolId, PoolStatus, SwapEvent } from '@zeitgeistpm/types/interfaces/swaps';
@@ -787,6 +787,7 @@ declare module '@polkadot/types/types/registry' {
     Retriable: Retriable;
     RewardDestination: RewardDestination;
     RewardPoint: RewardPoint;
+    RoundIndex: RoundIndex,
     RoundSnapshot: RoundSnapshot;
     RoundState: RoundState;
     RpcMethods: RpcMethods;
